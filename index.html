@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="image-modal" class="image-modal">
+        <span class="image-modal-close" onclick="closeImageModal()">×</span>
+        <img class="image-modal-content" id="modal-image">
+        <div id="image-caption" class="image-caption"></div>
+    </div>
+    <div class="bg-glow">
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DataVision</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animated-title"><span class="word">Knowledge</span> to Insights</h1>
+                    <p class="animated-intro">
+                    <p>Turning complex data into clear insights<br>with <strong>UNMATCHED SPEED</strong> and
+                        <strong>PRECISION</strong>.
+                    </p>
+                    </p>
+
+
+
+
+                    <div class="cta-row">
+                        <a href="#portfolio" class="cta-button">View My Work</a>
+                        <a href="https://drive.google.com/file/d/1ou71TRgCk-B58_NBfGL7IDSc4q6c094T/view?usp=sharing"
+                            class="cta-button cta-ghost" download>View CV</a>
+                    </div>
+                </div>
+
+                <!-- moved inside the same container -->
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="https://avatars.githubusercontent.com/u/228155571?s=400&u=07ce6d1a1241df2df8c52d7d893b9e5d87e33370&v=4"
+                            alt="Ahmed Taher" />
+                    </div>
+                    <div class="standalone-text">
+                        Hi - I am Ahmed Taher
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+        <div class="section-divider"></div>
+
+        <section class="stats scroll-animate parallax-element">
+            <div class="container">
+                <h2 class="section-title parallax-element">About me</h2>
+                <p class="about-me-text"><strong>Hi, I’m Ahmed</strong>, a <strong>Data Analyst</strong> specializing in turning raw data into actionable insights. 
+                    I have hands-on experience with the full analysis process — from <strong>cleaning</strong> and <strong>preparing data</strong> to <strong>building dashboards</strong> and <strong>reports.<br></strong>
+                    My expertise includes <strong>Microsoft Excel</strong> (advanced formulas, Pivot Tables, Power Query, dashboards), 
+                   <strong><br> SQL/MySQL</strong> (queries, joins, and reporting), and <strong>data visualization</strong> to deliver <strong>FAST</strong>, <strong>CLEAR</strong>, <strong>ACCURATE</strong>, 
+                    and <strong>RELIABLE INSIGHTS</strong> that support smarter decision-making.</p>
+                <div class="stats-grid">
+                    <div class="stat-card parallax-element">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card parallax-element">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="portfolio" class="portfolio scroll-animate parallax-element">
+            <div class="container">
+                <h2 class="section-title parallax-element">Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card parallax-element">
+                        <div class="project-image">
+                            <img src="https://i.top4top.io/p_3531a980y1.png" alt="Sales Performance Dashboard"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder" style="display: none;">📊</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sales Performance Dashboard</h3>
+                            <p class="project-description">Interactive Excel dashboard showcasing sales trends, customer
+                                insights, and revenue metrics. Includes dynamic filters, key KPIs, and visual reports on
+                                top products, employees, and quarterly performance for clear decision-making.</p>
+                            <div class="project-tags">
+                                <span class="tag">Excel</span>
+                            </div>
+                            <a href="#" onclick="showProjectDetail('sales-dashboard')" class="project-link">View Project
+                                →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card parallax-element">
+                        <div class="project-image">
+                            <img src="https://h.top4top.io/p_3531drl0f1.png" alt="Hospital Prescription Analysis"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder" style="display: none;">📊</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Hospital Prescription Analysis</h3>
+                            <p class="project-description">Designed and executed a structured SQL project to analyze
+                                hospital prescription data. Built a relational database with real-world logic, joined
+                                multiple tables, and wrote insightful queries to uncover trends, doctor activity, and
+                                medication usage across patients.</p>
+                            <div class="project-tags">
+                                <span class="tag">SQL</span>
+                            </div>
+                            <a href="#" onclick="showProjectDetail('churn-prediction')" class="project-link">View
+                                Project →</a>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="services" class="services scroll-animate parallax-element">
+            <div class="container">
+                <h2 class="section-title parallax-element">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card parallax-element">
+                        <div class="service-icon">📊</div>
+                        <h3>Data Visualization</h3>
+                        <p>Create compelling dashboards and interactive visualizations that make complex data easy to
+                            understand and actionable for stakeholders across all business levels.</p>
+                    </div>
+                    <div class="service-card parallax-element">
+                        <div class="service-icon">🧹</div>
+                        <h3>Data Cleaning & Preparation</h3>
+                        <p>Clean, organize, and structure raw data by removing errors, duplicates, and inconsistencies —
+                            ensuring accurate and reliable analysis.</p>
+                    </div>
+                    <div class="service-card parallax-element">
+                        <div class="service-icon">🗃️</div>
+                        <h3>SQL Data Analysis</h3>
+                        <p>Write efficient SQL queries to extract, filter, and combine data from databases. Generate
+                            insights and reports that answer key business questions.</p>
+                    </div>
+                    <div class="service-card parallax-element">
+                        <div class="service-icon">🤝</div>
+                        <h3>Always Available Support</h3>
+                        <p>Stay connected through timely responses and flexible availability, ensuring projects move
+                            forward without interruptions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="contact" class="contact scroll-animate parallax-element">
+            <div class="container">
+                <h2 class="section-title parallax-element">Let's Connect</h2>
+                <p style="font-size: 1.3rem; color: #b0c4de; margin-bottom: 20px;" class="parallax-element">Ready to
+                    transform your data into actionable insights? Let's discuss your project.</p>
+
+                <div class="contact-buttons parallax-element">
+                    <a href="mailto:ahmed.taher.youssef@outlook.com?subject=Data%20Analysis%20Project%20Inquiry&amp;body=Hi%20Ahmed,%0D%0A%0D%0AI%27m%20interested%20in%20discussing%20a%20data%20analysis%20project%20with%20you.%0D%0A%0D%0AProject%20Details:%0D%0A-%0D%0A-%0D%0A-%0D%0A%0D%0ABest%20regards,"
+                        class="contact-button email">
+                        📧 Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-taher96/" target="_blank"
+                        class="contact-button linkedin">
+                        💼 LinkedIn
+                    </a>
+                    <a href="https://github.com/Ahmed-Taher-96" target="_blank" class="contact-button github">
+                        🔗 GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="chatbot-window">
+        <div class="chat-header">
+            <div class="chat-title">AI Assistant</div>
+            <button class="chat-close" onclick="closeChatbot()">×</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot">
+                Hi! I'm Ahmed's AI assistant. I can help you learn more about his data analysis services, projects, or
+                answer any questions you have. How can I help you today?
+            </div>
+        </div>
+        <div class="typing-indicator" id="typing-indicator">
+            <span>AI is typing</span>
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type your message..." maxlength="500">
+            <button id="chat-send" class="chat-send" onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+
+
+    <!-- Project Detail Modals -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeProjectDetail()">×</div>
+            <div id="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="taher.js"></script>
+
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9781be036330eea7',t:'MTc1NjY5Nzk4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
